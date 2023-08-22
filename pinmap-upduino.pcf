@@ -1,0 +1,26 @@
+set_io clk_pin 20	# Pin 20 -> 12Mhz internal, pin 35 -> PLL division possible
+set_io rst_n_pin 35	# Reset
+set_io ui_in[0] 2
+set_io ui_in[1] 46
+set_io ui_in[2] 47
+set_io ui_in[3] 45
+set_io ui_in[4] 48
+set_io ui_in[5] 3
+set_io ui_in[6] 4
+set_io ui_in[7] 44
+set_io uo_out[0] 6
+set_io uo_out[1] 9
+set_io uo_out[2] 11
+set_io uo_out[3] 18
+set_io uo_out[4] 19
+set_io uo_out[5] 13
+set_io uo_out[6] 21
+set_io uo_out[7] 12
+set_io uio[0] 28
+set_io uio[1] 38
+set_io uio[2] 42
+set_io uio[3] 36
+set_io uio[4] 43
+set_io uio[5] 34
+set_io uio[6] 37
+set_io uio[7] 31
