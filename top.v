@@ -22,15 +22,15 @@ module top(
         .ui_in(ui_in),
         .uo_out(uo_out),
         .uio_in(uio_in),
-        .uio_oe(uio_out),
+        .uio_out(uio_out),
         .uio_oe(uio_oe),
         .clk(clk),
         .rst_n(rst_n)
     );
 
     SB_IO #(
-        .PIN_TYPE(6'b 1010_01),
-        .PULLUP(1'b 0)	// Pull up enable for all bidirectional io
+        .PIN_TYPE(6'b 0110_01), // Use 1010_00 for tristate
+        .PULLUP(1'b 0)	// Pull up disable for all bidirectional io
     ) _uio [7:0] (
         .PACKAGE_PIN({uio[0], uio[1], uio[2], uio[3], uio[4], uio[5], uio[6], uio[7]}),
         .OUTPUT_ENABLE({uio_oe[0], uio_oe[1], uio_oe[2], uio_oe[3], uio_oe[4], uio_oe[5], uio_oe[6], uio_oe[7]}),
